@@ -6,6 +6,7 @@ service.name: {{service.name}}
 {{/if}}
 schedule: {{schedule}}
 timeout: {{timeout}}
+throttling: {{#if throttling.download_speed}}{{throttling.download_speed}}d/{{/if}}{{#if throttling.upload_speed}}{{throttling.upload_speed}}u/{{/if}}{{#if throttling.latency}}{{throttling.latency}}l{{/if}}
 {{#if tags}}
 tags: {{tags}}
 {{/if}}

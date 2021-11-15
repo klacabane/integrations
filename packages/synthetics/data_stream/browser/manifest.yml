@@ -107,6 +107,24 @@ streams:
         multi: false
         required: false
         show_user: true
+      - name: throttling.download_speed
+        type: text
+        title: Throttles the monitor's download speed
+        multi: false
+        required: false
+        show_user: true
+      - name: throttling.upload_speed
+        type: text
+        title: Throttles the monitor's upload speed
+        multi: false
+        required: false
+        show_user: true
+      - name: throttling.latency
+        type: text
+        title: Defines the monitor's round-trip lag
+        multi: false
+        required: false
+        show_user: true
       - name: filter_journeys.tags
         type: yaml
         title: run only journeys with the given tag(s), or globs
